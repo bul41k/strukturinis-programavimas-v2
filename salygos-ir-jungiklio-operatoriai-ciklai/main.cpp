@@ -29,6 +29,22 @@ using namespace std;
 // 3 uzudotis
     int main() {
 
-        int grade;
+        double grade;
+        cout << "Iveskite savo egzaminus balus iki 10" << endl;
+        cin >> grade;
+
+        if (grade == 10) {
+            cout << "Puiku" << endl;
+        } else if (grade > 10) {
+            cout << "Error" << endl;
+        } else if (grade >= 9) {
+            cout << "Labai gerai" << endl;
+        } else if (grade >= 7) {
+            cout << "Gerai" << endl;
+        } else if (grade >= 5) {
+            cout << "Patenkinamai" << endl;
+        } else {
+            cout << "Neislaikyta" << endl;
+        }
 
     }
