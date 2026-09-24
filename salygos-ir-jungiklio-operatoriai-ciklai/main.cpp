@@ -26,3 +26,9 @@ using namespace std;
         return 0;
     } */
 
+// 3 uzudotis
+    int main() {
+
+        int grade;
+
+    }
