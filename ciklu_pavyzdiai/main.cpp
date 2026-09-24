@@ -6,7 +6,17 @@
 
 int main() {
     // 1 pavyzdys Teigiamo skaiciaus ivedimas
+    int number;
+    std::cout << "Iveskite teigiama skaiciu" << std::endl;
+    std::cin >> number;
 
+    while (number <= 0) {
+        std::cout << "Klaida. Skaicius yra netinkamas" << std::endl;
+        std::cout << "Iveskite teigiama skaiciu" << std::endl;
+        cin >> number;
+    }
+
+    cout << "Ivestas skaicius yra: " << number << std::endl;
     // 2 pavyzdzys Taupynas iki pasiinkto tikslo
     /* double savings = 100.0;
     const double target = 500.0;
@@ -41,7 +51,7 @@ int main() {
 */
 
     // 4 pavyzdzys. Saksiatos valdymo meniu
-    int balance = 100;
+/*    int balance = 100;
     int choice;
 
     do {
@@ -93,7 +103,7 @@ int main() {
                 std::cout << "Tokios operacijos nera\n";
             }
         } while (choice != 0);
-
+*/
 
         return 0;
         // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
