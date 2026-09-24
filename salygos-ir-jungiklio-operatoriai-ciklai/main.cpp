@@ -3,7 +3,7 @@
 using namespace std;
 #include <iomanip>
 
-/* 1 uzduotis ir 2 uzuodtis
+/* 1 uzduotis ir 2 uzuodtis Patikrinimas vidurkis pazyma studentas
     int main() {
 
         const int studentGradesNum = 5;
@@ -26,8 +26,8 @@ using namespace std;
         return 0;
     } */
 
-// 3 uzudotis
-    int main() {
+// 3 uzudotis Patikrinimas balus egzaminas
+/*    int main() {
 
         double grade;
         cout << "Iveskite savo egzaminus balus iki 10" << endl;
@@ -47,4 +47,35 @@ using namespace std;
             cout << "Neislaikyta" << endl;
         }
 
+        return 0;
+    } */
+
+// 4 uzudotis
+    int main() {
+
+        int grade;
+        cout << "Iveskite savo egzaminus balus iki 10" << endl;
+        cin >> grade;
+
+        switch (grade) {
+            case 10:
+                cout << "Puiku";
+                break;
+            case 9:
+                cout << "Labai gerai";
+                break;
+            case 8:
+            case 7:
+                cout << "Gerai";
+                break;
+            case 6:
+            case 5:
+                cout << "Patenkinamai";
+                break;
+            default:
+                cout << "Neislaikyta";
+                break;
+        }
+
+        return 0;
     }
