@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+using namespace std;
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
+/*
 int main() {
     // 1 pavyzdys Teigiamo skaiciaus ivedimas
     int number;
@@ -13,10 +14,10 @@ int main() {
     while (number <= 0) {
         std::cout << "Klaida. Skaicius yra netinkamas" << std::endl;
         std::cout << "Iveskite teigiama skaiciu" << std::endl;
-        cin >> number;
+        std::cin >> number;
     }
 
-    cout << "Ivestas skaicius yra: " << number << std::endl;
+    std::cout << "Ivestas skaicius yra: " << number << std::endl; */
     // 2 pavyzdzys Taupynas iki pasiinkto tikslo
     /* double savings = 100.0;
     const double target = 500.0;
@@ -104,6 +105,29 @@ int main() {
             }
         } while (choice != 0);
 */
+        //5 pavyzdys. Studento pazymiu statistika
+int main() {
+
+        const int studentGradesNum = 5;
+        int grade;
+        int sum = 0;
+        int highestGrade = 0;
+
+        for (int i = 0; i < studentGradesNum; i++) {
+            std::cout << "Iveskite" << i << "studento pazymi" << std::endl;
+            std::cin >> grade;
+            sum += grade;
+
+            highestGrade = (grade > highestGrade) ? grade : highestGrade;
+        }
+        double averageGrade = static_cast<double>(sum) / studentGradesNum;
+
+        std::cout << std::fixed << std::setprecision(2)
+            << "Pazymius vidurkis " << averageGrade << std::endl;
+        std::cout << "Pazymius vidurkis "<< highestGrade << std::endl;
+            /* if (grade > highestScore) {
+                highestScore = grade;
+            } galima ir taip*/
 
         return 0;
         // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
